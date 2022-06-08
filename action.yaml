@@ -1,0 +1,16 @@
+name: Run Credo
+author: SumUp
+description: Runs credo command inside a container
+branding:
+  icon: terminal
+  color: white
+inputs:
+  args:
+    description: Arguments to be passed to mix credo command
+    required: false
+    default: ''
+runs:
+  using: docker
+  image: Dockefile
+  args:
+    - ${{ inputs.args }}
