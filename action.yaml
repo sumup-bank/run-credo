@@ -11,6 +11,6 @@ inputs:
     default: ''
 runs:
   using: docker
-  image: Dockefile
+  image: Dockerfile
   args:
     - ${{ inputs.args }}
