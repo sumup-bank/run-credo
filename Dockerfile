@@ -1,4 +1,4 @@
-FROM elixir:1.12-alpine
+FROM elixir:1.13-alpine
 
 RUN apk add -q git
 
